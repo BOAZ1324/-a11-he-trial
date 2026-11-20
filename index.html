@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>קפה הגפן — דף ניסיון</title>
+<!-- ADAPT11 LOADER: the tag goes here after Boaz creates the site (R18 step 1) -->
+<style>
+  /* The page's own declared font, as a real site declares one: a system serif stack on body (inherited by every
+     element). Chosen because it is offline (no font download for the copy), on every Windows machine the checker runs
+     on, has Hebrew glyphs, and differs from every candidate (all Google sans/serif families) — so an override is
+     visible and measurable. */
+  body { font-family: "Times New Roman", Times, serif; margin: 0; color: #222; background: #fbfaf7; line-height: 1.5; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header.site-header { background: #2f3e2e; color: #fff; padding: 12px 0; }
+  header.site-header a { color: #fff; margin-inline-end: 16px; text-decoration: none; }
+  h1 { font-size: 34px; margin: 24px 0 8px; }
+  h2 { font-size: 24px; margin: 28px 0 8px; }
+  h3 { font-size: 19px; margin: 0 0 6px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: #fff; border: 1px solid #e3ded3; border-radius: 8px; padding: 14px; }
+  .price { font-weight: bold; }
+  .btn { display: inline-block; background: #7a4b2a; color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; border: 0; font-size: 16px; cursor: pointer; }
+  form.order { background: #fff; border: 1px solid #e3ded3; border-radius: 8px; padding: 14px; margin: 16px 0; }
+  footer.site-footer { margin-top: 40px; background: #e9e4d8; padding: 16px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap">
+    <a href="#menu">התפריט</a>
+    <a href="#order">הזמנה</a>
+    <a href="#about">עלינו</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>קפה הגפן — Specialty Coffee בלב העיר</h1>
+  <p>ברוכים הבאים לקפה הגפן. אנחנו קולים את הפולים בעצמנו כל בוקר, ומגישים אספרסו, Cold Brew ומאפים טריים. פתוח בימים א׳–ה׳ בשעות 07:00–19:00, ובימי שישי עד 14:00.</p>
+  <p>מי שמזמין דרך האתר מקבל 10% הנחה על ההזמנה הראשונה. משלוח חינם בהזמנה מעל ₪120. לשאלות: 03-555-1234 או בווטסאפ.</p>
+
+  <h2 id="menu">התפריט שלנו</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>אספרסו כפול</h3>
+      <p>תערובת הבית, 60% Arabica מברזיל ו-40% מאתיופיה. קלייה בינונית.</p>
+      <p class="price">₪14</p>
+      <a class="btn" href="#order">להזמנה</a>
+    </article>
+    <article class="card">
+      <h3>Cold Brew בקבוק</h3>
+      <p>חליטה קרה של 18 שעות, בקבוק של 330 מ״ל. מומלץ להגיש עם קרח.</p>
+      <p class="price">₪22</p>
+      <a class="btn" href="#order">להזמנה</a>
+    </article>
+    <article class="card">
+      <h3>קרואסון חמאה</h3>
+      <p>נאפה אצלנו כל בוקר עם חמאה צרפתית. מוגש חם, עד הצהריים.</p>
+      <p class="price">₪16.50</p>
+      <a class="btn" href="#order">להזמנה</a>
+    </article>
+  </div>
+
+  <h2 id="order">הזמנה מהירה</h2>
+  <form class="order" action="#" onsubmit="return false">
+    <p>בחרו מוצר מהתפריט, ונחזור אליכם תוך 15 דקות לאישור. התשלום בקופה או ב-Bit.</p>
+    <button class="btn" type="submit">שליחת הזמנה</button>
+    <button class="btn" type="button">ניקוי</button>
+  </form>
+
+  <h2 id="about">עלינו</h2>
+  <h3>הסיפור של קפה הגפן</h3>
+  <p>התחלנו ב-2019 כעגלת קפה קטנה בשוק. היום יש לנו שני סניפים ו-12 אנשי צוות. כל הפולים נקנים ישירות מחוות, בלי מתווכים — Direct Trade.</p>
+  <ul>
+    <li>כשרות: בהשגחת הרבנות המקומית.</li>
+    <li>חניה: חינם בחניון הסמוך, עד שעתיים.</li>
+    <li>נגישות: כניסה ללא מדרגות ושירותי נכים.</li>
+  </ul>
+  <p>רוצים לשמוע על אירועים? <a href="#about">הירשמו לניוזלטר</a> ונעדכן פעם בחודש.</p>
+</main>
+
+<!-- The EXCLUDED area for the Scope: its own class, one element. It must keep the page's own font. -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p>קפה הגפן בע״מ · רחוב הגפן 12, תל אביב · ח״פ 515555555</p>
+    <p>© 2026 כל הזכויות שמורות · <a href="#about">תנאי שימוש</a> · <a href="#about">מדיניות פרטיות</a></p>
+  </div>
+</footer>
+</body>
+</html>
